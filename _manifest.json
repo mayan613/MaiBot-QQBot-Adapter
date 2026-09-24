@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "id": "galeros.qqbot-adapter",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "name": "QQBot 适配器 / QQBot Adapter",
   "description": "QQ 官方机器人适配器，通过 QQ Bot API (WebSocket + REST) 连接 QQ 开放平台。",
   "author": {

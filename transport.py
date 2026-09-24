@@ -505,6 +505,10 @@ class QQBotTransportClient:
                         # 通知上层
                         await self._notify_connection_opened()
                     else:
+                        if t == "RESUMED":
+                            self._logger.info("QQ Bot 会话恢复成功，启动心跳")
+                            await self._start_heartbeat()
+                            await self._notify_connection_opened()
                         # 普通事件
                         if isinstance(d, dict):
                             event_seq = self._last_received_seq
